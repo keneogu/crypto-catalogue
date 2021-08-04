@@ -8,7 +8,7 @@ function Header() {
       <h1 className="left-head">Crypto</h1>
       <div className="right-head">
         <Link to="/">Home</Link>
-        <Link to="/menu">Category</Link>
+        <Link to="/category">Category</Link>
         <button type="button">
           Submit
         </button>
