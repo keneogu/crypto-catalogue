@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Filter from './Filter';
 import { getCoin } from '../actions';
 import coinAPI from '../API/api';
@@ -25,7 +26,20 @@ function Category() {
       <Filter />
       <div>
         {filteredCoins.map((c) => (
-          <p key={c.name}>{c.name}</p>
+          <div className="coin-container" key={c.id}>
+            <div className="coin-row">
+              <Link className="pokemonLink" to={`/coin/${c.id}`}>
+                <div className="coin">
+                  <img src={c.image} alt="crypto" />
+                  <h1>{c.name}</h1>
+                  <p className="coin-symbol">{c.symbol.toUpperCase()}</p>
+                </div>
+                <div className="coin-data">
+                  <p>{c.current_price}</p>
+                </div>
+              </Link>
+            </div>
+          </div>
         ))}
       </div>
     </>
