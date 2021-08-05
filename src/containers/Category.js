@@ -5,7 +5,10 @@ import coinAPI from '../API/api';
 
 function Category() {
   const coins = useSelector((state) => state.coin);
+  const filterValue = useSelector((state) => state.filter);
   const dispatch = useDispatch();
+
+  const filteredCoins = coins.filter((e) => e.name.match(new RegExp(filterValue, 'gi')));
 
   const fetchCoins = async () => {
     const response = await coinAPI();
@@ -15,7 +18,7 @@ function Category() {
   useEffect(() => {
     fetchCoins();
   }, []);
-  console.log(coins);
+
   return (
     <>
       <div>
