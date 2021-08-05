@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import Filter from './Filter';
 import { getCoin } from '../actions';
 import coinAPI from '../API/api';
 
@@ -21,6 +22,7 @@ function Category() {
 
   return (
     <>
+      <Filter />
       <div>
         {filteredCoins.map((c) => (
           <p key={c.name}>{c.name}</p>
