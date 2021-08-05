@@ -1,4 +1,4 @@
-import { GET_COIN, COIN_DETAILS } from './actionType';
+import { FILTER, GET_COIN, COIN_DETAILS } from './actionType';
 
 export const getCoin = (response) => ({
   type: GET_COIN,
@@ -11,7 +11,7 @@ export const seeDetails = ({ data }) => ({
 
 });
 
-// export const filterCoin = ({ value }) => ({
-//   type: FILTER,
-//   payload: value,
-// });
+export const filterCoin = ({ value }) => ({
+  type: FILTER,
+  payload: value,
+});
