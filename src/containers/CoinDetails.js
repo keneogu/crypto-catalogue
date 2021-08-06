@@ -8,7 +8,6 @@ function CoinDetails() {
   const { id } = useParams();
   const currentCoin = useSelector((state) => state.currentCoin);
   const dispatch = useDispatch();
-  console.log(currentCoin);
 
   const fetchCoinDetails = async (id) => {
     const response = await fetchCoin(id);
@@ -21,7 +20,13 @@ function CoinDetails() {
 
   return (
     <div>
-      <h1>CoinDetails</h1>
+      {Object.keys(currentCoin).length === 0 ? (
+        <div>...Loading</div>
+      ) : (
+        <div>
+          <p>working...</p>
+        </div>
+      )}
     </div>
   );
 }

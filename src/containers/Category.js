@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Filter from './Filter';
 import { getCoin } from '../actions';
-import coinAPI from '../API/api';
+import { coinAPI } from '../API/api';
 
 function Category() {
   const coins = useSelector((state) => state.coin);
@@ -28,7 +28,7 @@ function Category() {
         {filteredCoins.map((c) => (
           <div className="coin-container" key={c.id}>
             <div className="coin-row">
-              <Link className="pokemonLink" to={`/coin/${c.id}`}>
+              <Link className="coinLink" to={`/coin/${c.id}`}>
                 <div className="coin">
                   <img src={c.image} alt="crypto" />
                   <h1>{c.name}</h1>
