@@ -7,7 +7,13 @@ export const getCoin = (response) => ({
 
 export const seeDetails = ({ data }) => ({
   type: COIN_DETAILS,
-  payload: data,
+  payload: {
+    id: data.id,
+    name: data.name,
+    symbol: data.symbol,
+    market_cap_rank: data.market_cap_rank,
+    description: data.description.en,
+  },
 
 });
 
