@@ -9,7 +9,7 @@ export const coinAPI = async () => {
   }
 };
 
-export const findCoin = async (id) => {
+export const fetchCoin = async (id) => {
   try {
     const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${id}`);
     return response;
