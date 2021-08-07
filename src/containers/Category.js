@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Filter from './Filter';
 import { getCoin } from '../actions';
 import { coinAPI } from '../API/api';
+import '../styles/Category.css';
 
 function Category() {
   const coins = useSelector((state) => state.coin);
@@ -27,29 +28,32 @@ function Category() {
       <div>
         {filteredCoins.map((c) => (
           <div className="coin-container" key={c.id}>
-            <div className="coin-row">
-              <Link className="coinLink" to={`/coin/${c.id}`}>
+            <Link className="coin-link" to={`/coin/${c.id}`}>
+              <div className="coin-row">
                 <div className="coin">
                   <img src={c.image} alt="crypto" />
-                  <h1>{c.name}</h1>
+                  <h1 className="coin-name">{c.name}</h1>
                   <p className="coin-symbol">{c.symbol.toUpperCase()}</p>
-                </div>
-                <div className="coin-data">
-                  <p>{c.current_price}</p>
+                  <p>
+                    <span>$</span>
+                    {c.current_price}
+                  </p>
                   {c.price_change_percentage_24h < 0 ? (
                     <p className="coin-persent red">
                       {c.price_change_percentage_24h.toFixed(2)}
                       %
                     </p>
                   ) : (
-                    <p className="coin-persent red">
+                    <p className="coin-persent green">
+                      +
                       {c.price_change_percentage_24h.toFixed(2)}
                       %
                     </p>
                   )}
+                  <p className="coin-view">View more</p>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
