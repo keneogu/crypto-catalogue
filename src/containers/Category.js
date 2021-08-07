@@ -36,6 +36,17 @@ function Category() {
                 </div>
                 <div className="coin-data">
                   <p>{c.current_price}</p>
+                  {c.price_change_percentage_24h < 0 ? (
+                    <p className="coin-persent red">
+                      {c.price_change_percentage_24h.toFixed(2)}
+                      %
+                    </p>
+                  ) : (
+                    <p className="coin-persent red">
+                      {c.price_change_percentage_24h.toFixed(2)}
+                      %
+                    </p>
+                  )}
                 </div>
               </Link>
             </div>
