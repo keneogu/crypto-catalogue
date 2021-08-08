@@ -30,21 +30,23 @@ function Category() {
           <div className="coin-container" key={c.id}>
             <Link className="coin-link" to={`/coin/${c.id}`}>
               <div className="coin-row">
-                <div className="coin">
+                <div className="coin-head">
                   <img src={c.image} alt="crypto" />
                   <h1 className="coin-name">{c.name}</h1>
+                </div>
+                <div className="coin">
                   <p className="coin-symbol">{c.symbol.toUpperCase()}</p>
                   <p>
                     <span>$</span>
                     {c.current_price}
                   </p>
                   {c.price_change_percentage_24h < 0 ? (
-                    <p className="coin-persent red">
+                    <p className="red">
                       {c.price_change_percentage_24h.toFixed(2)}
                       %
                     </p>
                   ) : (
-                    <p className="coin-persent green">
+                    <p className="green">
                       +
                       {c.price_change_percentage_24h.toFixed(2)}
                       %
