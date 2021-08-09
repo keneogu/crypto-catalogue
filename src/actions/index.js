@@ -11,7 +11,10 @@ export const seeDetails = ({ data }) => ({
     id: data.id,
     name: data.name,
     symbol: data.symbol,
-    market_cap_rank: data.market_cap_rank,
+    image: data.image.large,
+    market_cap_rank: data.market_data.market_cap_rank,
+    current_price: data.market_data.current_price.usd,
+    market_cap: data.market_data.market_cap.usd,
     description: data.description.en,
   },
 
