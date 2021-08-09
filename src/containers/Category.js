@@ -38,7 +38,7 @@ function Category() {
                   <p className="coin-symbol">{c.symbol.toUpperCase()}</p>
                   <p>
                     <span>$</span>
-                    {c.current_price}
+                    {c.current_price.toLocaleString()}
                   </p>
                   {c.price_change_percentage_24h < 0 ? (
                     <p className="red">
