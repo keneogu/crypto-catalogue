@@ -9,9 +9,6 @@ function Header() {
       <div className="right-head">
         <Link to="/">Home</Link>
         <Link to="/category">Category</Link>
-        <button type="button">
-          Submit
-        </button>
       </div>
     </div>
   );
