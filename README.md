@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-- Follow [this link](https://salty-wave-49269.herokuapp.com/) to try the app
+- Follow [this link](https://crypto-catalogue.herokuapp.com/) to try the app
 
 ## Built With 
 
