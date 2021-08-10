@@ -27,3 +27,17 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.82rem;
 }
+
+.view-coins {
+  border: 1px solid #eee;
+	border-radius: 10px;
+	padding: 10px;
+  background-color: #eee;
+  margin-top: 10px;
+}
+
+.view-coins a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(185, 130, 11);
+}
