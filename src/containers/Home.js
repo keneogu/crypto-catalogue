@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
 import '../styles/Home.css';
 
@@ -18,6 +19,7 @@ function Home() {
             delaySpeed={1000}
           />
         </h5>
+        <p className="view-coins"><Link to="/category">View Coins</Link></p>
       </div>
     </div>
   );
