@@ -2,9 +2,15 @@
 
 > This app is made with React and Redux, and its purpose is to fetch data for various cryptocurrencies from coingecko api and you can also filter data to get a specific coin.
 
+### Category Page
+![Category Page](src/image/screenshot1.png)
+
+### CoinDetails Page
+![CoinDetails Page](src/image/screenshot2.png)
+
 ## Live Demo
 
-- Follow [this link]() to try the app
+- Follow [this link](https://salty-wave-49269.herokuapp.com/) to try the app
 
 ## Built With 
 
