@@ -1,6 +1,6 @@
 ## Crypto-Catalogue
 
-> This app is made with React and Redux, and its purpose is to fetch data for various cryptocurrencies from coingecko api and you can also filter data to get a specific coin.
+> This app is made with React and Redux, and its purpose is to fetch data for various cryptocurrencies from https://www.coingecko.com/en/api/documentation api and you can also filter data to get a specific coin.
 
 ### Category Page
 ![Category Page](src/image/screenshot1.png)
