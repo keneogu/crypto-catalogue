@@ -30,6 +30,7 @@ To get a local copy up and running follow these simple example steps.
 - cd into the `crypto`
 - run `npm install`
 - run `npm run start`
+- To run tests write `npm run test`
 
 ## Author
 
