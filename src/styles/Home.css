@@ -1,0 +1,43 @@
+.home-container {
+  width: 100%;
+  height: 93vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../image/crypto.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #eee;
+}
+
+.home-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home-h-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 15%;
+}
+
+.home-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+}
+
+.view-coins {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #eee;
+  margin-top: 10px;
+}
+
+.view-coins a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(185, 130, 11);
+}
